@@ -188,6 +188,28 @@ h1 {
   box-shadow: 0 12px 24px rgba(18, 29, 47, 0.1);
 }
 
+.cbtm-highlights {
+  margin-top: 1.3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.cbtm-gallery {
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.cbtm-gallery img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  aspect-ratio: 16 / 10;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.09);
+}
+
 footer {
   background: #121d2f;
   color: #fff;
@@ -215,7 +237,9 @@ footer {
   .campus-grid,
   .gallery,
   .cards,
-  .event-wrap {
+  .event-wrap,
+  .cbtm-highlights,
+  .cbtm-gallery {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -228,7 +252,9 @@ footer {
   .campus-grid,
   .gallery,
   .cards,
-  .event-wrap {
+  .event-wrap,
+  .cbtm-highlights,
+  .cbtm-gallery {
     grid-template-columns: 1fr;
   }
 
