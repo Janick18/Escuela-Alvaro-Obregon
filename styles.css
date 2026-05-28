@@ -224,19 +224,65 @@ h1 {
   gap: 1rem;
 }
 
-.cbtm-gallery {
+.cbtm-intro {
+  margin-top: 1.3rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 20px rgba(18, 29, 47, 0.08);
+}
+
+.cbtm-intro h3 {
+  margin: 0 0 0.35rem;
+  color: #4f2fa5;
+  font-size: 1rem;
+}
+
+.cbtm-intro h3:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.cbtm-intro p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+.cbtm-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.cbtm-visuals {
   margin-top: 1.2rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
-.cbtm-gallery img {
+.cbtm-visuals figure {
+  margin: 0;
+}
+
+.cbtm-visuals img {
   width: 100%;
-  border-radius: 14px;
+  border-radius: 12px;
   object-fit: cover;
-  aspect-ratio: 16 / 10;
-  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.09);
+  aspect-ratio: 4 / 3;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.09);
+}
+
+.cbtm-visuals figcaption {
+  margin-top: 0.45rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #54657e;
+  text-align: center;
 }
 
 .cbtm-details {
@@ -244,6 +290,67 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+}
+
+.contact-grid {
+  margin-top: 1.3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.contact-cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-card h3 {
+  color: var(--primary);
+}
+
+.cbtm-card h3 {
+  color: #4f2fa5;
+}
+
+.contact-card a {
+  color: var(--primary);
+}
+
+.cbtm-card a {
+  color: #4f2fa5;
+}
+
+.contact-form h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.85rem;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #d9e0eb;
+  border-radius: 8px;
+  font: inherit;
+  color: var(--text);
+  background: #fff;
+}
+
+.contact-form button {
+  cursor: pointer;
+  font: inherit;
+  margin-top: 0.25rem;
 }
 
 footer {
@@ -269,15 +376,27 @@ footer {
   color: #c8d4eb;
 }
 
+.footer-content a {
+  color: #c8d4eb;
+}
+
 @media (max-width: 900px) {
   .campus-grid,
   .gallery,
   .cards,
   .event-wrap,
   .cbtm-highlights,
-  .cbtm-gallery,
-  .cbtm-details {
+  .cbtm-visuals,
+  .cbtm-details,
+  .cbtm-intro,
+  .contact-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .cbtm-intro {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
   }
 }
 
@@ -291,8 +410,10 @@ footer {
   .cards,
   .event-wrap,
   .cbtm-highlights,
-  .cbtm-gallery,
-  .cbtm-details {
+  .cbtm-visuals,
+  .cbtm-details,
+  .cbtm-intro,
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 
