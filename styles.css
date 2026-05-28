@@ -258,31 +258,14 @@ h1 {
   object-fit: cover;
 }
 
-.cbtm-visuals {
-  margin-top: 1.2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+.text-link {
+  color: #4f2fa5;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-.cbtm-visuals figure {
-  margin: 0;
-}
-
-.cbtm-visuals img {
-  width: 100%;
-  border-radius: 12px;
-  object-fit: cover;
-  aspect-ratio: 4 / 3;
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.09);
-}
-
-.cbtm-visuals figcaption {
-  margin-top: 0.45rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #54657e;
-  text-align: center;
+.text-link:hover {
+  text-decoration: underline;
 }
 
 .cbtm-details {
@@ -353,6 +336,64 @@ h1 {
   margin-top: 0.25rem;
 }
 
+.page-header {
+  background: #121d2f;
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+
+.page-header .brand-top,
+.page-header .brand-name {
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.nav-btn.btn-secondary {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+.facilities-gallery {
+  margin-top: 1.3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.facilities-gallery figure {
+  margin: 0;
+}
+
+.facility-feature {
+  grid-column: 1 / -1;
+}
+
+.facilities-gallery img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.09);
+}
+
+.facility-feature img {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #edf1f7;
+}
+
+.facilities-gallery figcaption {
+  margin-top: 0.45rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #54657e;
+}
+
 footer {
   background: #121d2f;
   color: #fff;
@@ -386,10 +427,10 @@ footer {
   .cards,
   .event-wrap,
   .cbtm-highlights,
-  .cbtm-visuals,
   .cbtm-details,
   .cbtm-intro,
-  .contact-grid {
+  .contact-grid,
+  .facilities-gallery {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -410,10 +451,10 @@ footer {
   .cards,
   .event-wrap,
   .cbtm-highlights,
-  .cbtm-visuals,
   .cbtm-details,
   .cbtm-intro,
-  .contact-grid {
+  .contact-grid,
+  .facilities-gallery {
     grid-template-columns: 1fr;
   }
 
